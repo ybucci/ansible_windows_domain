@@ -1,0 +1,5 @@
+- name: "Domain Provision"
+  hosts: all
+  gather_facts: yes
+  roles:
+    - { role: domain, tags: [ 'domain' ] }

@@ -1,0 +1,16 @@
+---
+# defaults file for ansible-pdc
+pdc_administrator_username: Administrator
+pdc_administrator_password: P@ssw0rd1!
+pdc_dns_nics: "*"
+pdc_dns_servers: "{{ ansible_host }}"
+pdc_domain: contoso.local
+pdc_netbios: CONTOSO
+pdc_domain_safe_mode_password: P@ssw0rd1!
+pdc_domain_functional_level: Win2012R2
+pdc_forest_functional_level: Win2012R2
+pdc_required_psmodules: ["xPSDesiredStateConfiguration", "NetworkingDsc", "ComputerManagementDsc", "ActiveDirectoryDsc"] 
+pdc_required_features: ["AD-domain-services", "DNS"]
+pdc_desired_dns_forwarders: ["8.8.8.8", "8.8.4.4"]
+ntp_servers: "0.br.pool.ntp.org,1.br.pool.ntp.org,2.br.pool.ntp.org,3.br.pool.ntp.org"
+reverse_dns_zone: "192.168.15.0/24"
