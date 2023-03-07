@@ -1,4 +1,4 @@
-# Instal / Configure Windows Domain
+# Install / Configure Windows Domain
 
 ### Required Packages
 
